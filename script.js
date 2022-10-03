@@ -11,10 +11,13 @@
     ]
 
     const addNewTask = (newTaskContent) => {
+        let taskInput = document.querySelector(".js-addTask");
+        taskInput.focus();
         tasks.push({
             content: newTaskContent,
         })
-    render()
+        taskInput.value = "";
+        render()
     }
     const removeTask = (index) => {
         tasks.splice(index, 1)
@@ -22,7 +25,6 @@
     }
     const toggleDoneTasks = (index) => {
         tasks[index].done = !tasks[index].done;
-        console.log(tasks[index].done)
         render()
     }
     const render = () => {
@@ -30,7 +32,7 @@
 
         for (const task of tasks) {
             htmlString += `
-                <li>
+                <li class="list__item${task.done ? " done":" "}">
                 <button class="js-done">zrobione?</button>
                 ${task.content} \n
                 <button class="js-deleteButton">X</>
@@ -57,7 +59,6 @@
 
     const onFormSubmit = (event) => {
         event.preventDefault();
-
         const newTaskContent = document.querySelector(".js-addTask").value.trim()
         if (newTaskContent === "") {
             return

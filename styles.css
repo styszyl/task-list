@@ -1,0 +1,13 @@
+html {
+    box-sizing: border-box;
+    background-color: rgba(128, 128, 128, 0.178);
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  .done {
+    text-decoration: line-through;
+  }
