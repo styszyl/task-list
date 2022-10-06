@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./form.css">
+    <link rel="stylesheet" href="./tasklist.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,9 +24,11 @@
             <input class="js-addTask form__input form__gridItem" placeholder="Co jest do zrobienia?">
             <button class="form__button form__gridItem">Dodaj zadanie</button>
         </form>
-        <p>Lista zadan</p>
-        <ul class="js-taskList">
-        </ul>
+        <div class="taskList">
+            <p class="taskList__paragraph">Lista zadań</p>
+            <ul class="js-taskList">
+            </ul>
+        </div>
     </div>
 </body>
 </html>

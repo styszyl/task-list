@@ -1,0 +1,10 @@
+.taskList {
+    background-color: white;
+    min-width: 300px;
+}
+
+.taskList__paragraph {
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    font-weight: 500;
+}
