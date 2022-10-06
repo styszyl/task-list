@@ -1,0 +1,43 @@
+.form {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: white;
+    grid-gap: 10px;
+    min-width: 300px;
+}
+
+/* .form__gridItem {
+    
+} */
+
+.form__gridItem--first {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-bottom: 4px solid rgba(128, 128, 128, 0.178);
+    background-color: white;
+    padding: 10px;
+}
+
+.form__label {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.form__input {
+    background-color: white;
+    height: 30px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+
+.form__button {
+    background-color: teal;
+    color:white;
+    font-size: 13px;
+    white-space: nowrap;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}

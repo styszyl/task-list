@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +7,25 @@
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">  
     <title>Lista zadan</title>
 </head>
 <body>
-    <h1>Lista zadań</h1>
-    <form class="js-form">
-        <label>Dodaj nowe zadanie</label>
-        <input class="js-addTask" placeholder="Co jest do zrobienia?">
-        <button>Dodaj zadanie</button>
-    </form>
-    <p>Lista zadan</p>
-  <ul class="js-taskList">
-  </ul>
+    <div class="wrapper">
+        <h1 clas="header">Lista zadań</h1>
+        <form class="js-form form">
+            <label class="form__label form__gridItem form__gridItem--first">Dodaj nowe zadanie</label>
+            <input class="js-addTask form__input form__gridItem" placeholder="Co jest do zrobienia?">
+            <button class="form__button form__gridItem">Dodaj zadanie</button>
+        </form>
+        <p>Lista zadan</p>
+        <ul class="js-taskList">
+        </ul>
+    </div>
 </body>
 </html>

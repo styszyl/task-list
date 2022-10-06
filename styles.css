@@ -1,13 +1,24 @@
 html {
     box-sizing: border-box;
-    background-color: rgba(128, 128, 128, 0.178);
-  }
+    background-color: rgba(204, 204, 204, 0.28);
+}
   *,
   *::before,
   *::after {
     box-sizing: inherit;
-  }
-  
-  .done {
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 200px;
+}
+
+.header {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.done {
     text-decoration: line-through;
-  }
+}
