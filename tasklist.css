@@ -1,10 +1,41 @@
 .taskList {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
     background-color: white;
     min-width: 300px;
 }
 
 .taskList__paragraph {
-    font-family: 'Roboto', sans-serif;
     padding: 10px;
     font-weight: 500;
+}
+
+
+
+.taskList__checkbox {
+    border: none;
+    font-size: 20px;
+    padding: 3x;
+    margin: 0;
+    background-color: green;
+    color:green;
+}
+
+.taskList__done {
+    color: white;
+}
+
+.taskList__deleteButton {
+    margin-right: 10px;
+    border: none;
+    padding: 3px;
+    font-size: 20px;
+    float: right;
+    color:white;
+    background-color: red;
+}
+
+.list__item {
+    list-style: none;
 }

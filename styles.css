@@ -1,6 +1,7 @@
 html {
-    box-sizing: border-box;
-    background-color: rgba(204, 204, 204, 0.28);
+  box-sizing: border-box;
+  background-color: rgba(204, 204, 204, 0.28);
+  font-family: 'Roboto', sans-serif;
 }
   *,
   *::before,
@@ -9,19 +10,19 @@ html {
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  margin: 50px 200px;
+  align-content: center;
+  min-width: 360px;
+  padding: 5vh 30vw;
 }
 
 .header {
-  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   min-width: 300px;
   white-space: nowrap;
   display: block;
+  overflow: hidden;
 }
 
 .done {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
