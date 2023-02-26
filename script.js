@@ -17,6 +17,7 @@
             content: newTaskContent,
         })
         taskInput.value = "";
+        taskInput.focus();
         render()
     }
 
@@ -35,14 +36,15 @@
 
         for (const task of tasks) {
             htmlString += `
-                <li class="list__item${task.done ? " done":" "}">
+                <li class="taskList__item${task.done ? " done":" "}">
                 <button class="js-done taskList__checkbox ${task.done ? " taskList__done":" "}">✔</button>
                 ${task.content} \n
                 <button class="js-deleteButton taskList__deleteButton">🗑
                 </li>
-                <hr>
+                <hr class="taskList__hrItem">
             `
         }
+        
         document.querySelector(".js-taskList").innerHTML = htmlString;
 
         const removeButtons = document.querySelectorAll(".js-deleteButton");
@@ -63,11 +65,13 @@
 
     const onFormSubmit = (event) => {
         event.preventDefault();
-        const newTaskContent = document.querySelector(".js-addTask").value.trim()
-        if (newTaskContent === "") {
+        const newTaskContent = document.querySelector(".js-addTask")
+        const newTaskContentTrimmed = newTaskContent.value.trim()
+        if (newTaskContentTrimmed === "") {
+            newTaskContent.focus();
             return
         }
-        addNewTask(newTaskContent);
+        addNewTask(newTaskContentTrimmed);
     };
 
 
