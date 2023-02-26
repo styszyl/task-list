@@ -1,17 +1,20 @@
 .taskList {
-    display: flex;
-    flex-direction: column;
     margin-top: 10px;
     background-color: white;
     min-width: 300px;
+    padding: 10px 0 5px 0;
 }
 
 .taskList__paragraph {
-    padding: 10px;
-    font-weight: 500;
+    margin: 20px 0 0 20px;
+    font-size: 20px;
+    background-color: white;
+    font-weight: 900;
 }
 
-
+.taskList__hr {
+    color: rgba(180, 180, 180, 0.267);  
+}
 
 .taskList__checkbox {
     border: none;
@@ -36,6 +39,17 @@
     background-color: red;
 }
 
-.list__item {
+
+.taskList__ul {
+    padding: 0;
+}
+
+.taskList__item {
     list-style: none;
+    padding: 0 20px;
+}
+
+.taskList__hrItem {
+    margin: 10px;
+    color: rgba(180, 180, 180, 0.267);
 }
