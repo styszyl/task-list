@@ -18,12 +18,10 @@
 }
 
 .form__label {
-    margin-top: 20px;
-    margin-left: 20px;
+    margin: 20px 0 0 20px;
     font-size: 20px;
     background-color: white;
     font-weight: 900;
-    
 }
 
 .form__input {
