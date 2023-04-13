@@ -3,10 +3,11 @@ html {
   background-color: rgba(204, 204, 204, 0.28);
   font-family: 'Roboto', sans-serif;
 }
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 .wrapper {

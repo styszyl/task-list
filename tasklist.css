@@ -13,7 +13,7 @@
 }
 
 .taskList__hr {
-    color: rgba(180, 180, 180, 0.267);  
+    color: rgba(180, 180, 180, 0.267);
 }
 
 .taskList__checkbox {
@@ -22,7 +22,7 @@
     padding: 3x;
     margin: 0;
     background-color: green;
-    color:green;
+    color: green;
 }
 
 .taskList__done {
@@ -35,7 +35,7 @@
     padding: 3px;
     font-size: 20px;
     float: right;
-    color:white;
+    color: white;
     background-color: red;
 }
 

@@ -25,7 +25,7 @@
         tasks.splice(index, 1)
         render()
     }
-    
+
     const toggleDoneTasks = (index) => {
         tasks[index].done = !tasks[index].done;
         render()
@@ -36,15 +36,15 @@
 
         for (const task of tasks) {
             htmlString += `
-                <li class="taskList__item${task.done ? " done":" "}">
-                <button class="js-done taskList__checkbox ${task.done ? " taskList__done":" "}">✔</button>
+                <li class="taskList__item${task.done ? " done" : " "}">
+                <button class="js-done taskList__checkbox ${task.done ? " taskList__done" : " "}">✔</button>
                 ${task.content} \n
                 <button class="js-deleteButton taskList__deleteButton">🗑
                 </li>
                 <hr class="taskList__hrItem">
             `
         }
-        
+
         document.querySelector(".js-taskList").innerHTML = htmlString;
 
         const removeButtons = document.querySelectorAll(".js-deleteButton");
