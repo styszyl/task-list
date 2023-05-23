@@ -25,7 +25,7 @@
     color: green;
 }
 
-.taskList__done {
+.taskList__checkbox--done {
     color: white;
 }
 
@@ -47,6 +47,11 @@
 .taskList__item {
     list-style: none;
     padding: 0 20px;
+    word-break:break-word;
+}
+
+.taskList__item--done {
+    text-decoration: line-through;
 }
 
 .taskList__hrItem {
