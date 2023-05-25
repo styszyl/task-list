@@ -1,7 +1,7 @@
 .form {
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 5fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr;
     background-color: white;
     min-width: 300px;
@@ -44,4 +44,23 @@
     white-space: nowrap;
     padding: 10px;
     font-weight: 300;
+}
+
+@media(max-width: 767px) {
+    
+    .form {
+        grid-template-columns: 1fr;
+    }
+
+    .form__hr {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    .form__input {
+        width: auto;
+        margin: 20px;
+    }
+
+
 }
