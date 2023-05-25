@@ -2,11 +2,11 @@
     margin-top: 10px;
     background-color: white;
     min-width: 300px;
-    padding: 10px 0 5px 0;
+    padding: 5px 0 5px 0;
 }
 
 .taskList__paragraph {
-    margin: 20px 0 0 20px;
+    margin-left: 20px;
     font-size: 20px;
     background-color: white;
     font-weight: 900;
@@ -23,6 +23,7 @@
     margin: 0;
     background-color: green;
     color: green;
+    margin-right: 10px;
 }
 
 .taskList__checkbox--done {
@@ -30,27 +31,28 @@
 }
 
 .taskList__deleteButton {
-    margin-right: 10px;
     border: none;
-    padding: 3px;
     font-size: 20px;
     float: right;
     color: white;
     background-color: red;
+    margin-left: auto;
 }
-
 
 .taskList__ul {
     padding: 0;
+    margin-bottom: 40px;
 }
 
 .taskList__item {
+    display: flex;
+    align-items: center;
     list-style: none;
     padding: 0 20px;
-    word-break:break-word;
+    word-break: break-word;
 }
 
-.taskList__item--done {
+.taskList__content--done {
     text-decoration: line-through;
 }
 
