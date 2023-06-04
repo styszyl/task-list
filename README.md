@@ -12,3 +12,8 @@ https://styszyl.github.io/task-list/
 
 ![DEMO GIF](gif/demo.gif)
 
+ ### Technologies
+
+ - HTML
+ - CSS
+ - JS

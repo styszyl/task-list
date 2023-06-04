@@ -54,6 +54,7 @@
 
 .taskList__content--done {
     text-decoration: line-through;
+    margin-right: 15px;
 }
 
 .taskList__hrItem {
