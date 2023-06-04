@@ -1,7 +1,5 @@
 # Task-list
 
-![DEMO IMAGE](https://github.com/styszyl/task-list/blob/master/images/og-image.png)
-
 Simple task-list, you can add your tasks, mark them as completed and/or delete them.
 
 ## Usage
