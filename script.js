@@ -1,13 +1,5 @@
 {
     const tasks = [
-        {
-            content: "test",
-            done: false
-        },
-        {
-            content: "test-zrobione",
-            done: true
-        },
     ]
 
     const addNewTask = (newTaskContent) => {
