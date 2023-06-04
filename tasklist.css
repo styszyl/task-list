@@ -52,9 +52,12 @@
     word-break: break-word;
 }
 
+.taskList__content {
+    margin-right: 15px;
+}
+
 .taskList__content--done {
     text-decoration: line-through;
-    margin-right: 15px;
 }
 
 .taskList__hrItem {
