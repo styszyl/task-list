@@ -11,5 +11,5 @@ Simply type your task in input box and then press "Dodaj zadanie" button. You ca
 Additional notes on how to deploy this on a live or release system. Explaining the most important branches, what pipelines they trigger and how to update the database (if anything special).
 
 ### DEMO
-![DEMO GIF](https://gyazo.com/626ea4ccdf51fb29902ed18bd2a735f4)
+![DEMO GIF](gif/demo.gif)
 
