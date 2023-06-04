@@ -17,7 +17,6 @@
             content: newTaskContent,
         })
         taskInput.value = "";
-        taskInput.focus();
         render()
     }
 
