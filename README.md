@@ -6,8 +6,6 @@ Simple task-list, you can add your tasks, mark them as completed and/or delete t
 
 Simply type your task in input box and then press "Dodaj zadanie" button. You can mark task as completed after clicking on green box and delete them by clicking on red trash-can.
 
-Additional notes on how to deploy this on a live or release system. Explaining the most important branches, what pipelines they trigger and how to update the database (if anything special).
-
 ### DEMO
 ![DEMO GIF](gif/demo.gif)
 
