@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
   background-color: rgba(204, 204, 204, 0.28);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 *,
@@ -13,7 +13,8 @@ html {
 .wrapper {
   align-content: center;
   min-width: 360px;
-  padding: 5vh 10vw;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .header {
