@@ -1,7 +1,7 @@
 .form {
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 5fr 1fr;
     grid-template-rows: 1fr;
     background-color: white;
     min-width: 300px;
@@ -21,14 +21,14 @@
     margin: 20px 0 0 20px;
     font-size: 20px;
     background-color: white;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .form__input {
     margin-left: 20px;
     margin-bottom: 20px;
     width: 100%;
-    outline-style: none;
+    border: 1px solid rgba(180, 180, 180, 1);
 }
 
 .form__input:focus {
@@ -38,12 +38,13 @@
 
 .form__button {
     margin: 0 20px 20px 20px;
+    padding: 10px;
+    border: 0;
     background-color: teal;
     color: white;
     font-size: 17px;
-    white-space: nowrap;
-    padding: 10px;
     font-weight: 300;
+    white-space: nowrap;
 }
 
 @media(max-width: 767px) {
