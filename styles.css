@@ -11,16 +11,21 @@ html {
 }
 
 .wrapper {
-  align-content: center;
   min-width: 360px;
   max-width: 1000px;
   margin: auto;
+  background-color: white;
 }
 
 .header {
-  font-weight: 700;
-  min-width: 300px;
-  white-space: nowrap;
-  display: block;
-  overflow: hidden;
+  background-color: rgba(204, 204, 204, 0.28);
+  margin: auto;
+  padding: 20px 0;
+}
+
+@media(max-width: 767px) {
+
+  .wrapper {
+      margin: 20px;
+  }
 }
