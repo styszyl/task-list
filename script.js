@@ -1,6 +1,5 @@
 {
-    const tasks = [
-    ]
+    const tasks = [];
 
     const addNewTask = (newTaskContent) => {
         let taskInput = document.querySelector(".js-addTask");
@@ -9,17 +8,17 @@
             content: newTaskContent,
         })
         taskInput.value = "";
-        render()
+        render();
     }
 
     const removeTask = (index) => {
-        tasks.splice(index, 1)
-        render()
+        tasks.splice(index, 1);
+        render();
     }
 
     const toggleDoneTasks = (index) => {
         tasks[index].done = !tasks[index].done;
-        render()
+        render();
     }
 
     const render = () => {
@@ -28,12 +27,11 @@
         for (const task of tasks) {
             htmlString += `
                 <li class="taskList__item">
-                <button class="js-done taskList__checkbox ${task.done ? " taskList__checkbox--done" : " "}">✔</button>
-                <div class="taskList__content ${task.done ? " taskList__content--done" : " "}">${task.content} \n </div>
-                <button class="js-deleteButton taskList__deleteButton">🗑
+                    <button class="js-done taskList__checkbox ${task.done ? " taskList__checkbox--done" : " "}">✔</button>
+                    <div class="taskList__content ${task.done ? " taskList__content--done" : " "}">${task.content} \n </div>
+                    <button class="js-deleteButton taskList__deleteButton">🗑</button>
                 </li>
-                <hr class="taskList__hrItem">
-            `
+            `;
         }
 
         document.querySelector(".js-taskList").innerHTML = htmlString;
