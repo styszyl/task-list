@@ -1,0 +1,13 @@
+.section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    border-bottom: 10px solid rgba(204, 204, 204, 0.28);
+}
+
+.section__title {
+    font-weight: 600;
+    padding: 20px;
+    margin: 0;
+    border-bottom: 4px solid rgba(204, 204, 204, 0.28);
+}
