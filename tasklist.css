@@ -1,29 +1,40 @@
 .taskList {
-    margin-top: 10px;
     background-color: white;
     min-width: 300px;
-    padding: 5px 0 5px 0;
+    padding: 25px 0 10px;
 }
 
-.taskList__paragraph {
-    margin-left: 20px;
-    font-size: 20px;
-    background-color: white;
-    font-weight: 700;
+.taskList__item {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    word-break: break-word;
+    margin: 10px 25px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid rgba(180, 180, 180, 0.267);
 }
 
-.taskList__hr {
-    color: rgba(180, 180, 180, 0.267);
+.taskList__content {
+    margin-right: 15px;
+    width: 100%;
+}
+
+.taskList__content--done {
+    text-decoration: line-through;
 }
 
 .taskList__checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
     font-size: 20px;
-    padding: 3x;
-    margin: 0;
+    max-width: 32px;
+    padding: 8px;
+    aspect-ratio: 1;
     background-color: green;
     color: green;
-    margin-right: 10px;
+    margin: 0 10px;
 }
 
 .taskList__checkbox--done {
@@ -31,36 +42,19 @@
 }
 
 .taskList__deleteButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
     font-size: 20px;
-    float: right;
+    max-width: 32px;
+    padding: 10px;
+    aspect-ratio: 1;
     color: white;
     background-color: red;
-    margin-left: auto;
+    margin: 0 10px;
 }
 
 .taskList__ul {
     padding: 0;
-    margin-bottom: 40px;
-}
-
-.taskList__item {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    padding: 0 20px;
-    word-break: break-word;
-}
-
-.taskList__content {
-    margin-right: 15px;
-}
-
-.taskList__content--done {
-    text-decoration: line-through;
-}
-
-.taskList__hrItem {
-    margin: 10px;
-    color: rgba(180, 180, 180, 0.267);
 }
