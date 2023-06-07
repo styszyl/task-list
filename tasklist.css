@@ -1,6 +1,5 @@
 .taskList {
     background-color: white;
-    min-width: 300px;
     padding: 25px 0 10px;
 }
 
@@ -11,7 +10,7 @@
     word-break: break-word;
     margin: 10px 25px;
     padding-bottom: 10px;
-    border-bottom: 3px solid rgba(180, 180, 180, 0.267);
+    border-bottom: 2px solid rgba(180, 180, 180, 0.267);
 }
 
 .taskList__content {
