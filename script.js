@@ -1,10 +1,14 @@
 {
-    const tasks = [];
+    let tasks = [];
 
     const addNewTask = (newTaskContent) => {
-        tasks.push({
-            content: newTaskContent,
-        });
+        tasks = [
+            ...tasks,
+            {content: newTaskContent, done: false}
+        ]
+        // tasks.push({
+        //     content: newTaskContent,
+        // });
         render();
     }
 
