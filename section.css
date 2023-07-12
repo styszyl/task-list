@@ -9,5 +9,10 @@
     font-weight: 600;
     padding: 20px;
     margin: 0;
+}
+
+.section__header {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
     border-bottom: 2px solid rgba(204, 204, 204, 0.28);
 }
