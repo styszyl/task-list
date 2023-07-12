@@ -6,6 +6,17 @@
     render();
   };
 
+  const removeTask = (index) => {
+    tasks = [...tasks.filter((task, i) => i != index)]
+    render();
+  };
+
+  const toggleDoneTasks = (index) => {
+    tasks = tasks.map((task, i) => {
+      return (i == index) ? { ...task, done: !task.done } : task
+    });
+    render();
+  };
 
   const bindEvents = () => {
     const toggleDone = document.querySelectorAll(".js-done");
@@ -23,33 +34,16 @@
     });
   };
 
-  const removeTask = (index) => {
-    tasks = [...tasks.slice(0, index), ...tasks.slice(index + 1)];
-    render();
-  };
-
-  const toggleDoneTasks = (index) => {
-    tasks = [
-      ...tasks.slice(0, index),
-      { ...tasks[index], done: !tasks[index].done },
-      ...tasks.slice(index + 1),
-    ];
-    render();
-  };
-
-
   const render = () => {
     let htmlString = "";
 
     for (const task of tasks) {
       htmlString += `
                 <li class="taskList__item">
-                    <button class="js-done taskList__checkbox taskList__checkbox--green ${
-                      task.done ? " taskList__checkbox--greenDone" : " "
-                    }">✔</button>
-                    <div class="taskList__content ${
-                      task.done ? " taskList__content--done" : " "
-                    }">${task.content} \n </div>
+                    <button class="js-done taskList__checkbox taskList__checkbox--green ${task.done ? " taskList__checkbox--greenDone" : " "
+        }">✔</button>
+                    <div class="taskList__content ${task.done ? " taskList__content--done" : " "
+        }">${task.content} \n </div>
                     <button class="js-deleteButton taskList__checkbox taskList__checkbox--deleteButton">🗑</button>
                 </li>
             `;
