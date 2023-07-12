@@ -34,7 +34,8 @@
     });
   };
 
-  const render = () => {
+
+  const renderTasks = () => {
     let htmlString = "";
 
     for (const task of tasks) {
@@ -49,6 +50,24 @@
             `;
     }
     document.querySelector(".js-taskList").innerHTML = htmlString;
+    
+  }
+
+  const renderButtons = () => {
+    let buttonsHTML = " ";
+
+    if (tasks.length >= 1) {
+      buttonsHTML += ` 
+      <button class="tasklistButton hideDoneTasksButton">Ukryj ukończone</button>
+      <button class="tasklistButton markAllDoneTasksButton">Ukończ wszystkie</button>
+    `;
+    }
+    document.querySelector(".js-tasklistButtons").innerHTML = buttonsHTML;
+  }
+
+  const render = () => {
+    renderTasks()
+    renderButtons()
     bindEvents()
   };
 
