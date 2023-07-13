@@ -1,0 +1,9 @@
+.tasklistButtons {
+    display: flex;
+}
+
+.tasklistButton {
+    border:none;
+    background-color: white;
+    white-space: nowrap;
+}

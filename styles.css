@@ -21,15 +21,16 @@ body {
   background-color: white;
 }
 
-.header {
-  background-color: rgba(204, 204, 204, 0.28);
-  margin: auto;
-  padding: 20px 0;
-}
-
 @media(max-width: 767px) {
 
   .wrapper {
       margin: 20px;
   }
 }
+
+.header {
+  background-color: rgba(204, 204, 204, 0.28);
+  margin: auto;
+  padding: 20px 0;
+}
+
