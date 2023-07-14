@@ -34,6 +34,22 @@
     });
   };
 
+  const markDoneAllTasks = () => {
+    tasks = tasks.map((task) => {
+      return {...task, done: task.done}
+    })
+    render();
+  };
+  const bindButtonsEvents = () => {
+    const markDoneAllTasksButton = document.querySelector(".markAllDoneTasksButton");
+    console.log(markDoneAllTasksButton)
+    if (markDoneAllTasksButton != null) {
+      console.log("Już nie null")
+      markDoneAllTasksButton.addEventListener("click", () => {
+        markDoneAllTasks();
+      })
+    };
+  }
 
   const renderTasks = () => {
     let htmlString = "";
@@ -66,12 +82,11 @@
   }
 
   const render = () => {
-    renderTasks()
-    renderButtons()
-    bindEvents()
+    renderTasks();
+    renderButtons();
+    bindEvents();
+    bindButtonsEvents();
   };
-
-
 
   const onFormSubmit = (event) => {
     event.preventDefault();
