@@ -36,15 +36,14 @@
 
   const markDoneAllTasks = () => {
     tasks = tasks.map((task) => {
-      return {...task, done: task.done}
+      return {...task, done: true}
     })
     render();
   };
+
   const bindButtonsEvents = () => {
     const markDoneAllTasksButton = document.querySelector(".markAllDoneTasksButton");
-    console.log(markDoneAllTasksButton)
     if (markDoneAllTasksButton != null) {
-      console.log("Już nie null")
       markDoneAllTasksButton.addEventListener("click", () => {
         markDoneAllTasks();
       })
