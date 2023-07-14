@@ -1,5 +1,6 @@
 {
   let tasks = [];
+  let hideTasks = false;
 
   const addNewTask = (newTaskContent) => {
     tasks = [...tasks, { content: newTaskContent, done: false }];
@@ -49,6 +50,12 @@
       })
     };
   }
+  
+  const isTaskDone = (task) => task.done ? true : false
+
+  const isEveryTaskDone = () => {
+    console.log(tasks.every((task) => isTaskDone(task)));
+  };
 
   const renderTasks = () => {
     let htmlString = "";
@@ -85,6 +92,7 @@
     renderButtons();
     bindEvents();
     bindButtonsEvents();
+    isEveryTaskDone();
   };
 
   const onFormSubmit = (event) => {
