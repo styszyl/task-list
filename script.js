@@ -1,6 +1,6 @@
 {
   let tasks = [];
-  let hideTasks = false;
+  let hideDoneTasks = false;
 
   const addNewTask = (newTaskContent) => {
     tasks = [...tasks, { content: newTaskContent, done: false }];
@@ -37,7 +37,7 @@
 
   const markDoneAllTasks = () => {
     tasks = tasks.map((task) => {
-      return {...task, done: true}
+      return { ...task, done: true }
     })
     render();
   };
@@ -50,12 +50,19 @@
       })
     };
   }
-  
+
   const isTaskDone = (task) => task.done ? true : false
 
   const isEveryTaskDone = () => {
-    console.log(tasks.every((task) => isTaskDone(task)));
+    const markDoneAllTasksButton = document.querySelector(".markAllDoneTasksButton");
+    if (markDoneAllTasksButton != null) {
+      if (tasks.every((task) => isTaskDone(task))) {
+        markDoneAllTasksButton.toggleAttribute("disabled")
+      };
+    };
   };
+
+
 
   const renderTasks = () => {
     let htmlString = "";
@@ -72,7 +79,7 @@
             `;
     }
     document.querySelector(".js-taskList").innerHTML = htmlString;
-    
+
   }
 
   const renderButtons = () => {
