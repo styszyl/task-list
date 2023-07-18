@@ -71,9 +71,22 @@
     render();
   };
 
+  const togglehideDoneTasks = () => {
+    for (const task of tasks) {
+      if (task.done) {
+        const doneTask = document.querySelectorAll(".taskList__content--done");
+        console.log(doneTask);
+        doneTask.forEach(element => {
+          element.classList.toggle("hidden")
+        })
+      }
+    }
+    render();
+  }
+
   const hideAllDoneTasks = () => {
     const hideDoneTasksButton = document.querySelector(".hideDoneTasksButton");
-    hideDoneTasksButton != null ? hideDoneTasksButton.addEventListener("click", () => {togglehideDoneTasksStatus()}) : renderButtons();
+    hideDoneTasksButton != null ? hideDoneTasksButton.addEventListener("click", () => {console.log("Odpalam togglehideDoneTasks "), togglehideDoneTasks(), togglehideDoneTasksStatus() }) : renderButtons();
   };
 
   const renderTasks = () => {
