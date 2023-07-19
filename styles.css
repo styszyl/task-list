@@ -21,6 +21,10 @@ body {
   background-color: white;
 }
 
+.hidden {
+  display: none !important;
+}
+
 @media(max-width: 767px) {
 
   .wrapper {
