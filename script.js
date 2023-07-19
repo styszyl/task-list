@@ -56,9 +56,7 @@
   const isTaskDone = (task) => (task.done ? true : false);
 
   const isEveryTaskDone = () => {
-    const markDoneAllTasksButton = document.querySelector(
-      ".markAllDoneTasksButton"
-    );
+    const markDoneAllTasksButton = document.querySelector(".markAllDoneTasksButton");
     if (markDoneAllTasksButton != null) {
       if (tasks.every((task) => isTaskDone(task))) {
         markDoneAllTasksButton.toggleAttribute("disabled");
@@ -71,22 +69,9 @@
     render();
   };
 
-  const togglehideDoneTasks = () => {
-    for (const task of tasks) {
-      if (task.done) {
-        const doneTask = document.querySelectorAll(".taskList__content--done");
-        console.log(doneTask);
-        doneTask.forEach(element => {
-          element.classList.toggle("hidden")
-        })
-      }
-    }
-    render();
-  }
-
   const hideAllDoneTasks = () => {
     const hideDoneTasksButton = document.querySelector(".hideDoneTasksButton");
-    hideDoneTasksButton != null ? hideDoneTasksButton.addEventListener("click", () => {console.log("Odpalam togglehideDoneTasks "), togglehideDoneTasks(), togglehideDoneTasksStatus() }) : renderButtons();
+    hideDoneTasksButton != null ? hideDoneTasksButton.addEventListener("click", () => {togglehideDoneTasksStatus()}) : null
   };
 
   const renderTasks = () => {
@@ -94,13 +79,10 @@
 
     for (const task of tasks) {
       htmlString += `
-                <li class="taskList__item">
-                    <button class="js-done taskList__checkbox taskList__checkbox--green ${
-                      task.done ? " taskList__checkbox--greenDone" : " "
-                    }">✔</button>
-                    <div class="taskList__content ${
-                      task.done ? " taskList__content--done" : " "
-                    }">${task.content} \n </div>
+                <li class="taskList__item ${task.done & hideDoneTasks ? "hidden" : " "}">
+                    <button class="js-done taskList__checkbox taskList__checkbox--green 
+                    ${task.done ? " taskList__checkbox--greenDone" : " "}">✔</button>
+                    <div class="taskList__content ${task.done ? " taskList__content--done" : " "}">${task.content} \n </div>
                     <button class="js-deleteButton taskList__checkbox taskList__checkbox--deleteButton">🗑</button>
                 </li>
             `;
