@@ -3,7 +3,27 @@
 }
 
 .tasklistButton {
+    margin: 0 10px;
     border:none;
     background-color: white;
+    color:teal;
     white-space: nowrap;
+    transition: 0.3s;
+}
+
+.tasklistButton:hover {
+    color:hsl(180, 100%, 35%);
+}
+
+@media(max-width: 767px) {
+
+    .tasklistButtons {
+        flex-direction: column;
+        margin: 10px 0 25px;
+    }
+    
+    .tasklistButton {
+        margin: 10px;
+    }
+
 }
