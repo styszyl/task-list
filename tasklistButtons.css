@@ -1,5 +1,8 @@
 .tasklistButtons {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
+    background: none;
+    border: none;
 }
 
 .tasklistButton {
@@ -22,8 +25,8 @@
 @media(max-width: 767px) {
 
     .tasklistButtons {
-        flex-direction: column;
         margin: 10px 0 25px;
+        grid-template-columns: 1fr;
     }
     
     .tasklistButton {
