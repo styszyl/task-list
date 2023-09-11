@@ -3,6 +3,7 @@
     grid-template-columns: auto auto;
     background: none;
     border: none;
+    align-items: center;
 }
 
 .tasklistButton {
